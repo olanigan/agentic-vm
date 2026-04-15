@@ -1,0 +1,39 @@
+agent:
+  mode: interactive
+  background: false
+  watch:
+    enabled: true
+    paths:
+      - src/
+      - tests/
+      - api/
+    ignore:
+      - node_modules/
+      - dist/
+      - .git/
+  notifications:
+    enabled: true
+    types:
+      - security
+      - performance
+      - testing
+memory:
+  provider: local
+  embeddings:
+    provider: local
+    model: text-embedding-3-small
+    dimensions: 1536
+skills:
+  registry: https://registry.onecoder.dev
+  autoUpdate: true
+cloud:
+  endpoint: https://api.onecoder.dev
+  sync:
+    enabled: false
+    interval: 5m
+logging:
+  level: info
+  format: pretty
+ai:
+  provider: cloudflare
+  model: "@cf/meta/llama-3-8b-instruct"

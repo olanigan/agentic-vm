@@ -1,0 +1,7 @@
+{"timestamp":"2026-04-15T14:08:12.118Z","type":"trace","message":"Executing command: onecoder","details":{"args":["sprint","commit","-m","Add AI VM setup documentation and automation scripts"],"options":{}}}
+{"timestamp":"2026-04-15T14:08:39.291Z","type":"trace","message":"Executing command: onecoder","details":{"args":["sprint","status"],"options":{}}}
+{"timestamp":"2026-04-15T14:08:47.919Z","type":"trace","message":"Executing command: onecoder","details":{"args":["sprint","start","setup-ai-vm"],"options":{}}}
+{"timestamp":"2026-04-15T14:23:35.346Z","type":"trace","message":"Executing command: onecoder","details":{"args":["sprint","init","--name","setup-ai-vm","--no-branch"],"options":{}}}
+{"timestamp":"2026-04-15T14:23:42.597Z","type":"trace","message":"Executing command: onecoder","details":{"args":["sprint","start","001-setup-ai-vm"],"options":{}}}
+{"timestamp":"2026-04-15T14:23:47.537Z","type":"trace","message":"Executing command: onecoder","details":{"args":["sprint","commit","-m","Add AI VM setup automation with Make, Just, and modular scripts","--spec-id","001-setup-ai-vm"],"options":{}}}
+{"timestamp":"2026-04-15T14:23:50.719Z","type":"trace","message":"Executing command: onecoder","details":{"args":["sprint","commit","-m","Add AI VM setup automation with Make, Just, and modular scripts","--spec-id","SPEC-VM-001"],"options":{}}}

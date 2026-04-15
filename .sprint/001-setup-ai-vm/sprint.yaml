@@ -1,0 +1,22 @@
+$schema: https://onecoder.dev/schemas/sprint.json
+version: 1.0.0
+sprintId: 001-setup-ai-vm
+name: setup-ai-vm
+title: Setup Ai Vm
+status:
+  phase: in-progress
+  state: active
+  message: Working on task 001-setup-ai-vm
+metadata:
+  createdAt: 2026-04-15T14:23:35.361Z
+  updatedAt: 2026-04-15T14:23:42.615Z
+  parentComponent: onecoder-cli
+  specId: SPEC-CLI-001
+tasks:
+  - id: 001-setup-ai-vm
+    title: Task 001-setup-ai-vm
+    status: in-progress
+artifacts:
+  readme: README.md
+  retro: RETRO.md
+  walkthrough: walkthrough.md
