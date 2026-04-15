@@ -1,9 +1,13 @@
-.PHONY: all setup prereqs runtimes llm-engines agents
+.PHONY: all setup prereqs runtimes llm-engines agents health
 
 all: setup
 
 setup: prereqs runtimes llm-engines agents
 	@echo "All setup scripts executed."
+
+health:
+	@echo "Running health check..."
+	@./scripts/health-check.sh
 
 prereqs:
 	@echo "Running 01-prereqs.sh..."

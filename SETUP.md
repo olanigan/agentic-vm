@@ -80,6 +80,19 @@ just setup
 
 These commands will run all setup scripts in order, suppressing output and ignoring minor non-critical failures.
 
+### Health Checks
+To verify the installation and operational status of all components:
+
+#### Using Make:
+```bash
+make health
+```
+
+#### Using Just:
+```bash
+just health
+```
+
 ### NanoClaw Setup
 NanoClaw requires a manual clone and build process after Claude Code is authenticated.
 ```bash

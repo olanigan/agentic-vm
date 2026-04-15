@@ -2,6 +2,11 @@
 setup: prereqs runtimes llm-engines agents
     @echo "All setup scripts executed."
 
+# Run health check
+health:
+    @echo "Running health check..."
+    @./scripts/health-check.sh
+
 # Run system prerequisites
 prereqs:
     @echo "Running 01-prereqs.sh..."
