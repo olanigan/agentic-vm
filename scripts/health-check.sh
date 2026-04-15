@@ -31,8 +31,6 @@ if command -v ollama >/dev/null 2>&1; then
     fi
 fi
 
-check_cmd lms
-
 # 3. Agents
 echo "--- Agents ---"
 check_cmd claude

@@ -1,6 +1,6 @@
 # Debian VM AI Tools Setup Guide
 
-This guide details the prerequisites and installation steps for setting up a Debian VM to run OpenClaw, NanoClaw, Hermes Agents, Paperclip, Ollama, and LM Studio.
+This guide details the prerequisites and installation steps for setting up a Debian VM to run OpenClaw, NanoClaw, Hermes Agents, Paperclip, and Ollama.
 
 ## 1. System Prerequisites (Native `apt` Installs)
 
@@ -58,7 +58,6 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 | Tool | Installation Method | Command/Script |
 | :--- | :--- | :--- |
 | **Ollama** | Bash Script | `curl -fsSL https://ollama.com/install.sh | sh` |
-| **LM Studio (LMS)** | Bash Script | `curl -fsSL https://lmstudio.ai/install.sh | bash` |
 | **Claude Code CLI** | Bash Script | `curl -fsSL https://claude.ai/install.sh | bash` |
 | **OpenClaw** | Bash Script | `curl -fsSL https://openclaw.ai/install.sh | bash` |
 | **Hermes Agents** | Bash Script | `curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash` |
@@ -104,12 +103,12 @@ npm run build
 ```
 
 ## 4. Hardware Considerations
-- **RAM**: Minimum 16GB recommended (Ollama and LM Studio consume significant memory).
-- **GPU**: NVIDIA GPU with `nvidia-container-toolkit` is highly recommended for Ollama/LM Studio performance.
+- **RAM**: Minimum 16GB recommended (Ollama and models consume significant memory).
+- **GPU**: NVIDIA GPU with `nvidia-container-toolkit` is highly recommended for Ollama performance.
 - **Storage**: 100GB+ for model weights.
 
 ## 5. Summary of Scripts
 1. `01-prereqs.sh`: Install apt packages, Docker, Make, and Just.
 2. `02-runtimes.sh`: Install Node.js, pnpm, and Claude Code.
-3. `03-llm-engines.sh`: Install Ollama and LM Studio.
+3. `03-llm-engines.sh`: Install Ollama.
 4. `04-agents.sh`: Install OpenClaw, Hermes, Paperclip, and NanoClaw.

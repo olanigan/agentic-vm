@@ -7,6 +7,13 @@ health:
     @echo "Running health check..."
     @./scripts/health-check.sh
 
+# Build and run Docker image to benchmark total size
+bench:
+    @echo "Building Docker image for benchmarking..."
+    docker build -t agentic-vm-bench .
+    @echo "Total size of installation in Docker:"
+    docker run --rm agentic-vm-bench du -sh /
+
 # Run system prerequisites
 prereqs:
     @echo "Running 01-prereqs.sh..."

@@ -3,10 +3,10 @@
 set -e
 
 echo "Updating system packages..."
-sudo apt update && sudo apt upgrade -y
+sudo DEBIAN_FRONTEND=noninteractive apt update && sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
 echo "Installing essential build tools and utilities..."
-sudo apt install -y \
+sudo DEBIAN_FRONTEND=noninteractive apt install -y \
     curl \
     git \
     make \
